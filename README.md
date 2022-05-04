@@ -10,4 +10,4 @@ To execute:
 python main.py
 
 
-by Juan Suman and Matheus Eiji
+by Matheus Eiji

@@ -1,13 +1,16 @@
-# Matheus Eiji Moriya dos Santos e Juan Suman
+# Matheus Eiji Moriya dos Santos
 from chess_minimax import Bot
 import random
+import time
 
 game = Bot()
 
 print("\nChess Game Started!\n")
+print("\nP = PAWN\nR = ROOK\nB = BISHOP\nN = KNIGHT\nQ = QUEEN\n")
 print(game.board,"\n")
 
 while not game.board.is_game_over(claim_draw=False):
+    time.sleep(2) # Timer so you can know what happened
 
     if game.board.turn:
         play = game.select_play()

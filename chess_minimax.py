@@ -151,7 +151,6 @@ class Bot:
             for play in self.board.legal_moves:
                 self.board.push(play)
                 beta = min(self.minimax(depth - 1, alfa, beta), beta)
-
                 if beta <= alfa:
                     break
                 
@@ -160,7 +159,6 @@ class Bot:
 
     def select_play(self):
         best_value = -999
-
         for play in self.board.legal_moves:
             self.board.push(play)
             evaluation = self.minimax(alfa = -100000, beta = 100000)
